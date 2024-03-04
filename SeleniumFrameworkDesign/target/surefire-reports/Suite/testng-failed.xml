@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="shubhenduAutomation.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Login Page Error Validation(failed)" verbose="0">
+    <classes>
+      <class name="shubhenduAutomation.ErrorValidationsTest">
+        <methods>
+          <include name="checkCountISOne"/>
+          <include name="launchApplication"/>
+          <include name="taerDown"/>
+          <include name="logInErrorValidation"/>
+        </methods>
+      </class> <!-- shubhenduAutomation.ErrorValidationsTest -->
+    </classes>
+  </test> <!-- Login Page Error Validation(failed) -->
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)" verbose="0">
+    <classes>
+      <class name="shubhenduAutomation.StandAloneTest">
+        <methods>
+          <include name="orderValidation"/>
+          <include name="launchApplication"/>
+          <include name="taerDown"/>
+          <include name="standAloneTest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- shubhenduAutomation.StandAloneTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
