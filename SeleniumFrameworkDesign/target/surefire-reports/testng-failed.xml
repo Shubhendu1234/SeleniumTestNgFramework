@@ -4,18 +4,6 @@
   <listeners>
     <listener class-name="shubhenduAutomation.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Login Page Error Validation(failed)" verbose="0">
-    <classes>
-      <class name="shubhenduAutomation.ErrorValidationsTest">
-        <methods>
-          <include name="checkCountISOne"/>
-          <include name="launchApplication"/>
-          <include name="taerDown"/>
-          <include name="logInErrorValidation"/>
-        </methods>
-      </class> <!-- shubhenduAutomation.ErrorValidationsTest -->
-    </classes>
-  </test> <!-- Login Page Error Validation(failed) -->
   <test thread-count="5" parallel="tests" name="Submit Order Test(failed)" verbose="0">
     <classes>
       <class name="shubhenduAutomation.StandAloneTest">

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="shubhenduAutomation.StandAloneTest" class="method navigator-link" hash-for-method="standAloneTest({password=Shub@1234@#, email=dummy008@email.com, productName=ADIDAS ORIGINAL})">standAloneTest({password=Shub@1234@#, email=dummy008@email.com, productName=ADIDAS ORIGINAL})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="shubhenduAutomation.StandAloneTest" class="method navigator-link" hash-for-method="standAloneTest({password=Shub@1234@, email=dummy007@email.com, productName=ZARA COAT 3})">standAloneTest({password=Shub@1234@, email=dummy007@email.com, productName=ZARA COAT 3})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="shubhenduAutomation.StandAloneTest" class="method navigator-link" hash-for-method="orderValidation">orderValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,26 +143,6 @@
                         <a href="#" panel-name="suite-Suite" title="shubhenduAutomation.ErrorValidationsTest" class="method navigator-link" hash-for-method="logInErrorValidation">logInErrorValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="shubhenduAutomation.StandAloneTest" class="method navigator-link" hash-for-method="orderValidation(dummy008@email.com, Shub@1234@#, ADIDAS ORIGINAL)">orderValidation(dummy008@email.com, Shub@1234@#, ADIDAS ORIGINAL)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="shubhenduAutomation.StandAloneTest" class="method navigator-link" hash-for-method="orderValidation(dummy007@email.com, Shub@1234@, ZARA COAT 3)">orderValidation(dummy007@email.com, Shub@1234@, ZARA COAT 3)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="shubhenduAutomation.StandAloneTest" class="method navigator-link" hash-for-method="standAloneTest({password=Shub@1234@#, email=dummy008@email.com, productName=ADIDAS ORIGINAL})">standAloneTest({password=Shub@1234@#, email=dummy008@email.com, productName=ADIDAS ORIGINAL})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="shubhenduAutomation.StandAloneTest" class="method navigator-link" hash-for-method="standAloneTest({password=Shub@1234@, email=dummy007@email.com, productName=ZARA COAT 3})">standAloneTest({password=Shub@1234@, email=dummy007@email.com, productName=ZARA COAT 3})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -142,34 +155,43 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">shubhenduAutomation.StandAloneTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="orderValidation(dummy008@email.com, Shub@1234@#, ADIDAS ORIGINAL)">
-                  </a> <!-- orderValidation(dummy008@email.com, Shub@1234@#, ADIDAS ORIGINAL) -->
-                  <span class="method-name">orderValidation</span>
-                  <span class="parameters">(dummy008@email.com, Shub@1234@#, ADIDAS ORIGINAL)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="orderValidation(dummy007@email.com, Shub@1234@, ZARA COAT 3)">
-                  </a> <!-- orderValidation(dummy007@email.com, Shub@1234@, ZARA COAT 3) -->
-                  <span class="method-name">orderValidation</span>
-                  <span class="parameters">(dummy007@email.com, Shub@1234@, ZARA COAT 3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="standAloneTest({password=Shub@1234@#, email=dummy008@email.com, productName=ADIDAS ORIGINAL})">
                   </a> <!-- standAloneTest({password=Shub@1234@#, email=dummy008@email.com, productName=ADIDAS ORIGINAL}) -->
                   <span class="method-name">standAloneTest</span>
                   <span class="parameters">({password=Shub@1234@#, email=dummy008@email.com, productName=ADIDAS ORIGINAL})</span>
+                  <div class="stack-trace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (1056, 609) is out of bounds of viewport dimensions (1280, 587)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d16f10af-d530-45b4-a7f8-b6d7996d1a0b, actions {actions=[org.openqa.selenium.interactions.Sequence@5c2007e9]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:8175, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1968, moz:profile: C:\Users\skumarja\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:8175/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d16f10af-d530-45b4-a7f8-b6d7996d1a0b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:609)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
+	at shubhenduAutomation.SeleniumFrameworkDesign.CheckOut.clickOnPlaceOrder(CheckOut.java:44)
+	at shubhenduAutomation.StandAloneTest.standAloneTest(StandAloneTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -178,10 +200,58 @@
                   </a> <!-- standAloneTest({password=Shub@1234@, email=dummy007@email.com, productName=ZARA COAT 3}) -->
                   <span class="method-name">standAloneTest</span>
                   <span class="parameters">({password=Shub@1234@, email=dummy007@email.com, productName=ZARA COAT 3})</span>
+                  <div class="stack-trace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (1056, 609) is out of bounds of viewport dimensions (1280, 587)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9ec66a37-1862-4cfc-8382-0abdf6988bf2, actions {actions=[org.openqa.selenium.interactions.Sequence@411b95c6]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:16027, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14540, moz:profile: C:\Users\skumarja\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:16027/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9ec66a37-1862-4cfc-8382-0abdf6988bf2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:609)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
+	at shubhenduAutomation.SeleniumFrameworkDesign.CheckOut.clickOnPlaceOrder(CheckOut.java:44)
+	at shubhenduAutomation.StandAloneTest.standAloneTest(StandAloneTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">shubhenduAutomation.StandAloneTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="orderValidation">
+                  </a> <!-- orderValidation -->
+                  <span class="method-name">orderValidation</span>
+                  <div class="stack-trace">java.lang.Throwable: Method StandAloneTest.orderValidation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:shubhenduAutomation.StandAloneTest@54e1c68b] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -283,36 +353,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'standAloneTest')
 data.setCell(0, 2, 'shubhenduAutomation.StandAloneTest')
-data.setCell(0, 3, 6253);
+data.setCell(0, 3, 5727);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'standAloneTest')
 data.setCell(1, 2, 'shubhenduAutomation.StandAloneTest')
-data.setCell(1, 3, 5872);
+data.setCell(1, 3, 5566);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'checkCountISOne')
 data.setCell(2, 2, 'shubhenduAutomation.ErrorValidationsTest')
-data.setCell(2, 3, 2396);
+data.setCell(2, 3, 2574);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'logInErrorValidation')
 data.setCell(3, 2, 'shubhenduAutomation.ErrorValidationsTest')
-data.setCell(3, 3, 1629);
+data.setCell(3, 3, 396);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'orderValidation')
 data.setCell(4, 2, 'shubhenduAutomation.StandAloneTest')
-data.setCell(4, 3, 1106);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'orderValidation')
-data.setCell(5, 2, 'shubhenduAutomation.StandAloneTest')
-data.setCell(5, 3, 1061);
+data.setCell(4, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -348,90 +414,74 @@ return data;
               <div class="chronological-class-name">shubhenduAutomation.StandAloneTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">317 ms</span>
+                <span class="method-start">272 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">shubhenduAutomation.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkCountISOne</span>
-                <span class="method-start">8203 ms</span>
+                <span class="method-start">8457 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">shubhenduAutomation.StandAloneTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">standAloneTest({password=Shub@1234@, email=dummy007@email.com, productName=ZARA COAT 3})</span>
-                <span class="method-start">8203 ms</span>
+                <span class="method-start">9278 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">shubhenduAutomation.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">taerDown</span>
-                <span class="method-start">10605 ms</span>
+                <span class="method-start">11041 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">10780 ms</span>
+                <span class="method-start">13369 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">shubhenduAutomation.StandAloneTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">taerDown</span>
+                <span class="method-start">14951 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">16378 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">shubhenduAutomation.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">logInErrorValidation</span>
-                <span class="method-start">12760 ms</span>
+                <span class="method-start">19675 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">shubhenduAutomation.StandAloneTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">taerDown</span>
-                <span class="method-start">14075 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">14238 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">shubhenduAutomation.ErrorValidationsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">taerDown</span>
-                <span class="method-start">14390 ms</span>
+                <span class="method-start">20072 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">shubhenduAutomation.StandAloneTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">standAloneTest({password=Shub@1234@#, email=dummy008@email.com, productName=ADIDAS ORIGINAL})</span>
-                <span class="method-start">17757 ms</span>
+                <span class="method-start">22604 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">taerDown</span>
-                <span class="method-start">24011 ms</span>
+                <span class="method-start">28412 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">24166 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">orderValidation(dummy007@email.com, Shub@1234@, ZARA COAT 3)</span>
-                <span class="method-start">27382 ms</span>
+                <span class="method-name">orderValidation</span>
+                <span class="method-start">30420 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">taerDown</span>
-                <span class="method-start">28444 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">28606 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">orderValidation(dummy008@email.com, Shub@1234@#, ADIDAS ORIGINAL)</span>
-                <span class="method-start">32101 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">taerDown</span>
-                <span class="method-start">33207 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

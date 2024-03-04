@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Web Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 4, 2024 04:09:12 pm</span></a>
+<a href="#"><span class="badge badge-primary">Mar 4, 2024 04:22:28 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,6 +72,8 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,44 +81,6 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="2"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">standAloneTest</p>
-            <p class="text-sm">
-              <span>16:09:21 pm</span> / <span>00:00:05:863</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">standAloneTest</h5>
-<span class='badge badge-success'>03.04.2024 16:09:21</span>
-<span class='badge badge-danger'>03.04.2024 16:09:27</span>
-<span class='badge badge-default'>00:00:05:863</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:09:27 pm</td>
-        <td>
-          Test is passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
         <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
@@ -119,7 +88,7 @@
           <div class="test-detail">
             <p class="name">checkCountISOne</p>
             <p class="text-sm">
-              <span>16:09:21 pm</span> / <span>00:00:02:391</span>
+              <span>16:22:37 pm</span> / <span>00:00:02:580</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -128,9 +97,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">checkCountISOne</h5>
-<span class='badge badge-success'>03.04.2024 16:09:21</span>
-<span class='badge badge-danger'>03.04.2024 16:09:23</span>
-<span class='badge badge-default'>00:00:02:391</span>
+<span class='badge badge-success'>03.04.2024 16:22:37</span>
+<span class='badge badge-danger'>03.04.2024 16:22:40</span>
+<span class='badge badge-default'>00:00:02:580</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 </div>
@@ -140,9 +109,94 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:09:23 pm</td>
+        <td>4:22:40 pm</td>
         <td>
           Test is passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">standAloneTest</p>
+            <p class="text-sm">
+              <span>16:22:38 pm</span> / <span>00:00:05:670</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">standAloneTest</h5>
+<span class='badge badge-success'>03.04.2024 16:22:38</span>
+<span class='badge badge-danger'>03.04.2024 16:22:44</span>
+<span class='badge badge-default'>00:00:05:670</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='C:\Users\skumarja\git\repository2\SeleniumFrameworkDesign//reports//standAloneTest.png' src="C:\Users\skumarja\git\repository2\SeleniumFrameworkDesign//reports//standAloneTest.png">
+    <div class="title">standAloneTest</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:22:43 pm</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (1056, 609) is out of bounds of viewport dimensions (1280, 587)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9ec66a37-1862-4cfc-8382-0abdf6988bf2, actions {actions=[org.openqa.selenium.interactions.Sequence@411b95c6]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:16027, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14540, moz:profile: C:\Users\skumarja\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:16027/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9ec66a37-1862-4cfc-8382-0abdf6988bf2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:609)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
+	at shubhenduAutomation.SeleniumFrameworkDesign.CheckOut.clickOnPlaceOrder(CheckOut.java:44)
+	at shubhenduAutomation.StandAloneTest.standAloneTest(StandAloneTest.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -157,7 +211,7 @@
           <div class="test-detail">
             <p class="name">logInErrorValidation</p>
             <p class="text-sm">
-              <span>16:09:25 pm</span> / <span>00:00:01:630</span>
+              <span>16:22:48 pm</span> / <span>00:00:00:397</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -166,9 +220,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">logInErrorValidation</h5>
-<span class='badge badge-success'>03.04.2024 16:09:25</span>
-<span class='badge badge-danger'>03.04.2024 16:09:27</span>
-<span class='badge badge-default'>00:00:01:630</span>
+<span class='badge badge-success'>03.04.2024 16:22:48</span>
+<span class='badge badge-danger'>03.04.2024 16:22:49</span>
+<span class='badge badge-default'>00:00:00:397</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 </div>
 </div>
@@ -178,7 +232,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:09:27 pm</td>
+        <td>4:22:49 pm</td>
         <td>
           Test is passed
         </td>
@@ -188,37 +242,84 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
+        <li class="test-item"  status="fail" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">standAloneTest</p>
             <p class="text-sm">
-              <span>16:09:30 pm</span> / <span>00:00:06:253</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>16:22:51 pm</span> / <span>00:00:05:806</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">standAloneTest</h5>
-<span class='badge badge-success'>03.04.2024 16:09:30</span>
-<span class='badge badge-danger'>03.04.2024 16:09:37</span>
-<span class='badge badge-default'>00:00:06:253</span>
+<h5 class="test-status text-fail">standAloneTest</h5>
+<span class='badge badge-success'>03.04.2024 16:22:51</span>
+<span class='badge badge-danger'>03.04.2024 16:22:57</span>
+<span class='badge badge-default'>00:00:05:806</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='C:\Users\skumarja\git\repository2\SeleniumFrameworkDesign//reports//standAloneTest.png' src="C:\Users\skumarja\git\repository2\SeleniumFrameworkDesign//reports//standAloneTest.png">
+    <div class="title">standAloneTest</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:09:37 pm</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:22:57 pm</td>
         <td>
-          Test is passed
+          <textarea readonly class="code-block">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (1056, 609) is out of bounds of viewport dimensions (1280, 587)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d16f10af-d530-45b4-a7f8-b6d7996d1a0b, actions {actions=[org.openqa.selenium.interactions.Sequence@5c2007e9]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:8175, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1968, moz:profile: C:\Users\skumarja\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:8175/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d16f10af-d530-45b4-a7f8-b6d7996d1a0b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:609)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
+	at shubhenduAutomation.SeleniumFrameworkDesign.CheckOut.clickOnPlaceOrder(CheckOut.java:44)
+	at shubhenduAutomation.StandAloneTest.standAloneTest(StandAloneTest.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -226,25 +327,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="5"
+        <li class="test-item"  status="skip" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">orderValidation</p>
             <p class="text-sm">
-              <span>16:09:40 pm</span> / <span>00:00:01:062</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>16:22:59 pm</span> / <span>00:00:00:000</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">orderValidation</h5>
-<span class='badge badge-success'>03.04.2024 16:09:40</span>
-<span class='badge badge-danger'>03.04.2024 16:09:41</span>
-<span class='badge badge-default'>00:00:01:062</span>
+<h5 class="test-status text-skip">orderValidation</h5>
+<span class='badge badge-success'>03.04.2024 16:22:59</span>
+<span class='badge badge-danger'>03.04.2024 16:22:59</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 </div>
 </div>
@@ -253,48 +354,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:09:41 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>4:22:59 pm</td>
         <td>
-          Test is passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="6"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">orderValidation</p>
-            <p class="text-sm">
-              <span>16:09:45 pm</span> / <span>00:00:01:105</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">orderValidation</h5>
-<span class='badge badge-success'>03.04.2024 16:09:45</span>
-<span class='badge badge-danger'>03.04.2024 16:09:46</span>
-<span class='badge badge-default'>00:00:01:105</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:09:46 pm</td>
-        <td>
-          Test is passed
+          Test skipped
         </td>
       </tr>
   </tbody>
@@ -311,30 +374,86 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:22:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>standAloneTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:22:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>standAloneTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 4, 2024 04:09:12 pm</h3>
+<h3>Mar 4, 2024 04:22:28 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 4, 2024 04:09:46 pm</h3>
+<h3>Mar 4, 2024 04:22:59 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>6</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -350,13 +469,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>6</b> tests passed
+<div><small data-tooltip='40%'>
+<b>2</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='40%'><b>2</b> tests failed,
+<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -373,10 +492,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>6</b> events passed</small></div>
+<div><small data-tooltip='40%'><b>2</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>0</b> others
+<small data-tooltip='40%'><b>2</b> events failed,
+<b data-tooltip='%'>1</b> others
 </small>
 </div>
 </div>
@@ -392,7 +511,7 @@
 </div></div>
 <script>
 var timeline = {
-"standAloneTest":5.863,"checkCountISOne":2.391,"logInErrorValidation":1.63,"standAloneTest":6.253,"orderValidation":1.062,"orderValidation":1.105
+"checkCountISOne":2.58,"standAloneTest":5.67,"logInErrorValidation":0.397,"standAloneTest":5.806,"orderValidation":0
 };
 </script>
 <div class="row">
@@ -415,10 +534,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 6,
-failParent: 0,
+passParent: 2,
+failParent: 2,
 warningParent: 0,
-skipParent: 0,
+skipParent: 1,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -432,10 +551,10 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 6,
-failEvents: 0,
+passEvents: 2,
+failEvents: 2,
 warningEvents: 0,
-skipEvents: 0,
+skipEvents: 1,
 infoEvents: 0
 };
 </script>        </div>
