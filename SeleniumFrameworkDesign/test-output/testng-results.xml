@@ -1,30 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-04T16:23:19 IST" name="Suite" finished-at="2024-03-04T16:23:28 IST" duration-ms="9884">
+  <suite started-at="2024-03-04T20:21:48 IST" name="Suite" finished-at="2024-03-04T20:22:10 IST" duration-ms="21776">
     <groups>
-      <group name="ErrorValidation">
-        <method signature="ErrorValidationsTest.logInErrorValidation()[pri:0, instance:shubhenduAutomation.ErrorValidationsTest@51c668e3]" name="logInErrorValidation" class="shubhenduAutomation.ErrorValidationsTest"/>
-      </group> <!-- ErrorValidation -->
+      <group name="dataSet">
+        <method signature="StandAloneTest.standAloneTest(java.util.HashMap)[pri:0, instance:shubhenduAutomation.StandAloneTest@169e6180]" name="standAloneTest" class="shubhenduAutomation.StandAloneTest"/>
+      </group> <!-- dataSet -->
     </groups>
-    <test started-at="2024-03-04T16:23:19 IST" name="Submit Order Test" finished-at="2024-03-04T16:23:19 IST" duration-ms="13">
-    </test> <!-- Submit Order Test -->
-    <test started-at="2024-03-04T16:23:19 IST" name="Login Page Error Validation" finished-at="2024-03-04T16:23:28 IST" duration-ms="9884">
-      <class name="shubhenduAutomation.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:shubhenduAutomation.ErrorValidationsTest@51c668e3]" started-at="2024-03-04T16:23:19 IST" name="launchApplication" finished-at="2024-03-04T16:23:28 IST" duration-ms="9069" status="PASS">
+    <test started-at="2024-03-04T20:21:48 IST" name="Login Page Error Validation" finished-at="2024-03-04T20:21:48 IST" duration-ms="14">
+    </test> <!-- Login Page Error Validation -->
+    <test started-at="2024-03-04T20:21:48 IST" name="Submit Order Test" finished-at="2024-03-04T20:22:10 IST" duration-ms="21776">
+      <class name="shubhenduAutomation.StandAloneTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:shubhenduAutomation.StandAloneTest@169e6180]" started-at="2024-03-04T20:21:49 IST" name="launchApplication" finished-at="2024-03-04T20:21:55 IST" duration-ms="6656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="logInErrorValidation()[pri:0, instance:shubhenduAutomation.ErrorValidationsTest@51c668e3]" started-at="2024-03-04T16:23:28 IST" name="logInErrorValidation" finished-at="2024-03-04T16:23:28 IST" duration-ms="590" status="PASS">
+        <test-method signature="standAloneTest(java.util.HashMap)[pri:0, instance:shubhenduAutomation.StandAloneTest@169e6180]" started-at="2024-03-04T20:21:55 IST" name="standAloneTest" data-provider="getData" finished-at="2024-03-04T20:22:01 IST" duration-ms="5610" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Shub@1234@, email=dummy007@email.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logInErrorValidation -->
-        <test-method is-config="true" signature="taerDown()[pri:0, instance:shubhenduAutomation.ErrorValidationsTest@51c668e3]" started-at="2024-03-04T16:23:28 IST" name="taerDown" finished-at="2024-03-04T16:23:28 IST" duration-ms="168" status="PASS">
+        </test-method> <!-- standAloneTest -->
+        <test-method is-config="true" signature="taerDown()[pri:0, instance:shubhenduAutomation.StandAloneTest@169e6180]" started-at="2024-03-04T20:22:01 IST" name="taerDown" finished-at="2024-03-04T20:22:01 IST" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- taerDown -->
-      </class> <!-- shubhenduAutomation.ErrorValidationsTest -->
-    </test> <!-- Login Page Error Validation -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:shubhenduAutomation.StandAloneTest@169e6180]" started-at="2024-03-04T20:22:01 IST" name="launchApplication" finished-at="2024-03-04T20:22:05 IST" duration-ms="3369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="standAloneTest(java.util.HashMap)[pri:0, instance:shubhenduAutomation.StandAloneTest@169e6180]" started-at="2024-03-04T20:22:05 IST" name="standAloneTest" data-provider="getData" finished-at="2024-03-04T20:22:10 IST" duration-ms="5451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Shub@1234@#, email=dummy008@email.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- standAloneTest -->
+        <test-method is-config="true" signature="taerDown()[pri:0, instance:shubhenduAutomation.StandAloneTest@169e6180]" started-at="2024-03-04T20:22:10 IST" name="taerDown" finished-at="2024-03-04T20:22:10 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- taerDown -->
+      </class> <!-- shubhenduAutomation.StandAloneTest -->
+    </test> <!-- Submit Order Test -->
   </suite> <!-- Suite -->
 </testng-results>
